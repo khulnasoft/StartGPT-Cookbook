@@ -100,7 +100,7 @@ const result = await openai.embeddings.create({
 const [{ embedding }] = result.data;
 ```
 
-Remember that you will need an [OpenAI API key](https://platform.khulnasoft.com/api-keys) to interact with the OpenAI API. You can pass this as an environment variable called `OPENAI_API_KEY`, or manually set it when you instantiate your OpenAI client:
+Remember that you will need an [OpenAI API key](https://platform.khulnasoft.com/api-keys) to interact with the OpenAI API. You can pass this as an environment variable called `STARTGPT_API_KEY`, or manually set it when you instantiate your OpenAI client:
 
 ```js
 const openai = new OpenAI({

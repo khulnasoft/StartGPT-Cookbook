@@ -46,7 +46,7 @@ Inputs:
     - if omitted, will default to "https://api.khulnasoft.com/v1/embeddings"
 - api_key : str, optional
     - API key to use
-    - if omitted, the script will attempt to read it from an environment variable {os.getenv("OPENAI_API_KEY")}
+    - if omitted, the script will attempt to read it from an environment variable {os.getenv("STARTGPT_API_KEY")}
 - max_requests_per_minute : float, optional
     - target number of requests to make per minute (will make less if limited by tokens)
     - leave headroom by setting this to 50% or 75% of your limit
@@ -458,7 +458,7 @@ if __name__ == "__main__":
     parser.add_argument("--requests_filepath")
     parser.add_argument("--save_filepath", default=None)
     parser.add_argument("--request_url", default="https://api.khulnasoft.com/v1/embeddings")
-    parser.add_argument("--api_key", default=os.getenv("OPENAI_API_KEY"))
+    parser.add_argument("--api_key", default=os.getenv("STARTGPT_API_KEY"))
     parser.add_argument("--max_requests_per_minute", type=int, default=3_000 * 0.5)
     parser.add_argument("--max_tokens_per_minute", type=int, default=250_000 * 0.5)
     parser.add_argument("--token_encoding_name", default="cl100k_base")

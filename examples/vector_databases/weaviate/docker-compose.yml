@@ -1,7 +1,7 @@
 #################
 #
 # This is an example Docker file for Weaviate with all OpenAI modules enabled
-# You can, but don't have to set `OPENAI_APIKEY` because it can also be set at runtime
+# You can, but don't have to set `STARTGPT_APIKEY` because it can also be set at runtime
 #
 # Find the latest version here: https://weaviate.io/developers/weaviate/installation/docker-compose
 #
@@ -28,6 +28,6 @@ services:
       DEFAULT_VECTORIZER_MODULE: 'text2vec-openai'
       ENABLE_MODULES: 'text2vec-openai,qna-openai'
       CLUSTER_HOSTNAME: 'openai-weaviate-cluster'
-      # The following parameter (`OPENAI_APIKEY`) is optional, as you can also provide it at insert/query time
-      # OPENAI_APIKEY: sk-foobar 
+      # The following parameter (`STARTGPT_APIKEY`) is optional, as you can also provide it at insert/query time
+      # STARTGPT_APIKEY: sk-foobar 
 ...

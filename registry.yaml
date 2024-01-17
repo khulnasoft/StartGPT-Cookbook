@@ -1080,8 +1080,8 @@
     - ted-at-openai
   tags: []
 
-- title: Function-calling with an OpenAPI specification
-  path: examples/Function_calling_with_an_OpenAPI_spec.ipynb
+- title: Function-calling with an StartGPT specification
+  path: examples/Function_calling_with_an_StartGPT_spec.ipynb
   date: 2023-10-15
   authors:
     - shyamal-anadkat
