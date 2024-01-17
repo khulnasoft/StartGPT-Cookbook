@@ -8,8 +8,8 @@ But remember, SingleStoreDB is a high-performance, scalable, modern SQL DBMS tha
 
 ## Example
 
-This folder contains examples of using SingleStoreDB and OpenAI together. We will keep adding more scenarios so stay tuned!
+This folder contains examples of using SingleStoreDB and StartGpt together. We will keep adding more scenarios so stay tuned!
 
 | Name | Description |
 | --- | --- |
-| [OpenAI wikipedia semantic search](./OpenAI_wikipedia_semantic_search.ipynb) | Improve ChatGPT accuracy through SingleStoreDB semantic Search in QA |
+| [StartGpt wikipedia semantic search](./StartGpt_wikipedia_semantic_search.ipynb) | Improve ChatGPT accuracy through SingleStoreDB semantic Search in QA |

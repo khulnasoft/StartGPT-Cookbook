@@ -1,6 +1,6 @@
 # Vector Databases
 
-This section of the OpenAI Cookbook showcases many of the vector databases available to support your semantic search use cases.
+This section of the StartGpt Cookbook showcases many of the vector databases available to support your semantic search use cases.
 
 Vector databases can be a great accompaniment for knowledge retrieval applications, which reduce hallucinations by providing the LLM with the relevant context to answer questions.
 

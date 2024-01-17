@@ -6,17 +6,17 @@
 
 Neon supports vector search using the [pgvector](https://neon.tech/docs/extensions/pgvector) open-source PostgreSQL extension, which enables Postgres as a vector database for storing and querying embeddings.
 
-## OpenAI cookbook notebook
+## StartGpt cookbook notebook
 
 Check out the notebook in this repo for working with Neon Serverless Postgres as your vector database.
 
-### Semantic search using Neon Postgres with pgvector and OpenAI
+### Semantic search using Neon Postgres with pgvector and StartGpt
 
 In this notebook you will learn how to:
 
-1. Use embeddings created by OpenAI API
+1. Use embeddings created by StartGpt API
 2. Store embeddings in a Neon Serverless Postgres database
-3. Convert a raw text query to an embedding with OpenAI API
+3. Convert a raw text query to an embedding with StartGpt API
 4. Use Neon with the `pgvector` extension to perform vector similarity search
 
 ## Scaling Support
@@ -37,6 +37,6 @@ Neon enables you to scale your AI applications with the following features:
 
 - [Building AI applications with Neon](https://neon.tech/ai)
 - [Neon AI & embeddings documentation](https://neon.tech/docs/ai/ai-intro)
-- [Building an AI-powered Chatbot using Vercel, OpenAI, and Postgres](neon.tech/blog/building-an-ai-powered-chatbot-using-vercel-openai-and-postgres)
+- [Building an AI-powered Chatbot using Vercel, StartGpt, and Postgres](neon.tech/blog/building-an-ai-powered-chatbot-using-vercel-openai-and-postgres)
 - [Web-based AI SQL Playground and connecting to Postgres from the browser](https://neon.tech/blog/postgres-ai-playground)
 - [pgvector GitHub repository](https://github.com/pgvector/pgvector)

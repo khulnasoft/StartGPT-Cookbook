@@ -1,6 +1,6 @@
 # Welcome, AI Chef
 
-The OpenAI Cookbook is a community-driven resource aimed at sharing knowledge in a way that is accessible, engaging, and enriching for all AI builders.
+The StartGpt Cookbook is a community-driven resource aimed at sharing knowledge in a way that is accessible, engaging, and enriching for all AI builders.
 
 Before contributing, read through the existing issues and pull requests to see if someone else is already working on something similar. That way you can avoid duplicating efforts.
 
@@ -27,7 +27,7 @@ For additional advice on writing good documentation, refer to [What Makes Docume
 
 | Criteria     | Description                                                                                         | Score |
 | ------------ | --------------------------------------------------------------------------------------------------- | ----- |
-| Relevance    | Is the content related to building with OpenAI technologies? Is it useful to others?                |       |
+| Relevance    | Is the content related to building with StartGpt technologies? Is it useful to others?                |       |
 | Uniqueness   | Does the content offer new insights or unique information compared to existing documentation?       |       |
 | Clarity      | Is the language easy to understand? Are things well-explained? Is the title clear?                  |       |
 | Correctness  | Are the facts, code snippets, and examples correct and reliable? Does everything execute correctly? |       |

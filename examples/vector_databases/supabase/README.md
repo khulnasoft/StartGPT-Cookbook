@@ -15,9 +15,9 @@ Supabase adds an ecosystem of services and tools on top of Postgres that makes a
 
 We can use these services alongside pgvector to store and query embeddings within Postgres.
 
-## OpenAI Cookbook Examples
+## StartGpt Cookbook Examples
 
-Below are guides and resources that walk you through how to use OpenAI embedding models with Supabase Vector.
+Below are guides and resources that walk you through how to use StartGpt embedding models with Supabase Vector.
 
 | Guide                                    | Description                                                |
 | ---------------------------------------- | ---------------------------------------------------------- |

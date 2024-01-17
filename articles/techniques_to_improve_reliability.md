@@ -491,7 +491,7 @@ Another key technique for improving task performance is to train a verifier or d
 
 #### Method
 
-In 2021, OpenAI researchers applied this technique to grade school math problems, using the following procedure:
+In 2021, StartGpt researchers applied this technique to grade school math problems, using the following procedure:
 
 - First, they fine-tuned a model on questions and solutions
 - For each problem in the training set, they generated 100 solutions

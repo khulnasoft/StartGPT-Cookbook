@@ -6,7 +6,7 @@
 
 ## Examples
 
-This folder contains examples of using Pinecone and OpenAI together. More will be added over time so check back for updates!
+This folder contains examples of using Pinecone and StartGpt together. More will be added over time so check back for updates!
 
 | Name | Description | Google Colab |
 | --- | --- | --- |

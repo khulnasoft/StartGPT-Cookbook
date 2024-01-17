@@ -1,7 +1,7 @@
 <a href="https://cookbook.khulnasoft.com" target="_blank">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/images/startgpt-cookbook-white.png" style="max-width: 100%; width: 400px; margin-bottom: 20px">
-    <img alt="OpenAI Cookbook Logo" src="/images/startgpt-cookbook.png" width="400px">
+    <img alt="StartGpt Cookbook Logo" src="/images/startgpt-cookbook.png" width="400px">
   </picture>
 </a>
 
@@ -9,7 +9,7 @@
  
 > ✨ Navigate at [cookbook.khulnasoft.com](https://cookbook.khulnasoft.com)
 
-Example code and guides for accomplishing common tasks with the [OpenAI API](https://platform.khulnasoft.com/docs/introduction). To run these examples, you'll need an OpenAI account and associated API key ([create a free account here](https://beta.khulnasoft.com/signup)).
+Example code and guides for accomplishing common tasks with the [StartGpt API](https://platform.khulnasoft.com/docs/introduction). To run these examples, you'll need an StartGpt account and associated API key ([create a free account here](https://beta.khulnasoft.com/signup)).
 
 Most code examples are written in Python, though the concepts can be applied in any language.
 
@@ -17,7 +17,7 @@ For other useful tools, guides and courses, check out these [related resources f
 
 ## Contributing
 
-The OpenAI Cookbook is a community-driven resource. Whether you're submitting an idea, fixing a typo, adding a new guide, or improving an existing one, your contributions are greatly appreciated!
+The StartGpt Cookbook is a community-driven resource. Whether you're submitting an idea, fixing a typo, adding a new guide, or improving an existing one, your contributions are greatly appreciated!
 
 Before contributing, read through the existing issues and pull requests to see if someone else is already working on something similar. That way you can avoid duplicating efforts.
 

@@ -531,9 +531,9 @@
   tags:
     - embeddings
 
-- title: Using PolarDB-PG as a vector database for OpenAI embeddings
+- title: Using PolarDB-PG as a vector database for StartGpt embeddings
   path: >-
-    examples/vector_databases/PolarDB/Getting_started_with_PolarDB_and_OpenAI.ipynb
+    examples/vector_databases/PolarDB/Getting_started_with_PolarDB_and_StartGpt.ipynb
   date: 2023-07-11
   authors:
     - liuchengshan-lcs
@@ -542,7 +542,7 @@
 
 - title: Semantic search with SingleStoreDB
   path: >-
-    examples/vector_databases/SingleStoreDB/OpenAI_wikipedia_semantic_search.ipynb
+    examples/vector_databases/SingleStoreDB/StartGpt_wikipedia_semantic_search.ipynb
   date: 2023-05-22
   authors:
     - arno756
@@ -559,18 +559,18 @@
     - embeddings
     - completions
 
-- title: Using AnalyticDB as a vector database for OpenAI embeddings
+- title: Using AnalyticDB as a vector database for StartGpt embeddings
   path: >-
-    examples/vector_databases/analyticdb/Getting_started_with_AnalyticDB_and_OpenAI.ipynb
+    examples/vector_databases/analyticdb/Getting_started_with_AnalyticDB_and_StartGpt.ipynb
   date: 2023-04-06
   authors:
     - wangxuqi
   tags:
     - embeddings
 
-- title: Question Answering with Langchain, AnalyticDB and OpenAI
+- title: Question Answering with Langchain, AnalyticDB and StartGpt
   path: >-
-    examples/vector_databases/analyticdb/QA_with_Langchain_AnalyticDB_and_OpenAI.ipynb
+    examples/vector_databases/analyticdb/QA_with_Langchain_AnalyticDB_and_StartGpt.ipynb
   date: 2023-05-05
   authors:
     - wangxuqi
@@ -578,7 +578,7 @@
     - embeddings
     - tiktoken
 
-- title: Azure Cognitive Search as a vector database for OpenAI embeddings
+- title: Azure Cognitive Search as a vector database for StartGpt embeddings
   path: >-
     examples/vector_databases/azuresearch/Getting_started_with_azure_cognitive_search_and_openai.ipynb
   date: 2023-09-11
@@ -587,7 +587,7 @@
   tags:
     - embeddings
 
-- title: Philosophy with Vector Embeddings, OpenAI and Cassandra / Astra DB
+- title: Philosophy with Vector Embeddings, StartGpt and Cassandra / Astra DB
   path: examples/vector_databases/cassandra_astradb/Philosophical_Quotes_CQL.ipynb
   date: 2023-08-29
   authors:
@@ -596,7 +596,7 @@
     - embeddings
     - completions
 
-- title: Philosophy with Vector Embeddings, OpenAI and Cassandra / Astra DB
+- title: Philosophy with Vector Embeddings, StartGpt and Cassandra / Astra DB
   path: >-
     examples/vector_databases/cassandra_astradb/Philosophical_Quotes_cassIO.ipynb
   date: 2023-08-29
@@ -623,7 +623,7 @@
   tags:
     - embeddings
 
-- title: Robust Question Answering with Chroma and OpenAI
+- title: Robust Question Answering with Chroma and StartGpt
   path: examples/vector_databases/chroma/hyde-with-chroma-and-openai.ipynb
   date: 2023-04-06
   authors:
@@ -641,7 +641,7 @@
     - embeddings
     - completions
 
-- title: Retrieval augmented generation using Elasticsearch and OpenAI
+- title: Retrieval augmented generation using Elasticsearch and StartGpt
   path: >-
     examples/vector_databases/elasticsearch/elasticsearch-retrieval-augmented-generation.ipynb
   date: 2023-08-29
@@ -651,7 +651,7 @@
     - embeddings
     - completions
 
-- title: Semantic search using Elasticsearch and OpenAI
+- title: Semantic search using Elasticsearch and StartGpt
   path: examples/vector_databases/elasticsearch/elasticsearch-semantic-search.ipynb
   date: 2023-08-29
   authors:
@@ -660,9 +660,9 @@
     - embeddings
     - completions
 
-- title: Using Hologres as a vector database for OpenAI embeddings
+- title: Using Hologres as a vector database for StartGpt embeddings
   path: >-
-    examples/vector_databases/hologres/Getting_started_with_Hologres_and_OpenAI.ipynb
+    examples/vector_databases/hologres/Getting_started_with_Hologres_and_StartGpt.ipynb
   date: 2023-05-19
   authors:
     - zcgeng
@@ -686,27 +686,27 @@
   tags:
     - embeddings
 
-- title: Filtered Search with Milvus and OpenAI
+- title: Filtered Search with Milvus and StartGpt
   path: >-
-    examples/vector_databases/milvus/Filtered_search_with_Milvus_and_OpenAI.ipynb
+    examples/vector_databases/milvus/Filtered_search_with_Milvus_and_StartGpt.ipynb
   date: 2023-03-28
   authors:
     - filip-halt
   tags:
     - embeddings
 
-- title: Getting Started with Milvus and OpenAI
+- title: Getting Started with Milvus and StartGpt
   path: >-
-    examples/vector_databases/milvus/Getting_started_with_Milvus_and_OpenAI.ipynb
+    examples/vector_databases/milvus/Getting_started_with_Milvus_and_StartGpt.ipynb
   date: 2023-03-28
   authors:
     - filip-halt
   tags:
     - embeddings
 
-- title: Using MyScale as a vector database for OpenAI embeddings
+- title: Using MyScale as a vector database for StartGpt embeddings
   path: >-
-    examples/vector_databases/myscale/Getting_started_with_MyScale_and_OpenAI.ipynb
+    examples/vector_databases/myscale/Getting_started_with_MyScale_and_StartGpt.ipynb
   date: 2023-05-01
   authors:
     - melovy
@@ -749,7 +749,7 @@
     - embeddings
     - completions
 
-- title: Semantic Search with Pinecone and OpenAI
+- title: Semantic Search with Pinecone and StartGpt
   path: examples/vector_databases/pinecone/Semantic_Search.ipynb
   date: 2023-03-24
   authors:
@@ -766,17 +766,17 @@
   tags:
     - embeddings
 
-- title: Using Qdrant as a vector database for OpenAI embeddings
+- title: Using Qdrant as a vector database for StartGpt embeddings
   path: >-
-    examples/vector_databases/qdrant/Getting_started_with_Qdrant_and_OpenAI.ipynb
+    examples/vector_databases/qdrant/Getting_started_with_Qdrant_and_StartGpt.ipynb
   date: 2023-02-16
   authors:
     - kacperlukawski
   tags:
     - embeddings
 
-- title: Question Answering with Langchain, Qdrant and OpenAI
-  path: examples/vector_databases/qdrant/QA_with_Langchain_Qdrant_and_OpenAI.ipynb
+- title: Question Answering with Langchain, Qdrant and StartGpt
+  path: examples/vector_databases/qdrant/QA_with_Langchain_Qdrant_and_StartGpt.ipynb
   date: 2023-02-16
   authors:
     - kacperlukawski
@@ -809,7 +809,7 @@
   tags:
     - embeddings
 
-- title: Using Redis as a Vector Database with OpenAI
+- title: Using Redis as a Vector Database with StartGpt
   path: examples/vector_databases/redis/getting-started-with-redis-and-openai.ipynb
   date: 2023-02-13
   authors:
@@ -817,7 +817,7 @@
   tags:
     - embeddings
 
-- title: Running Hybrid VSS Queries with Redis and OpenAI
+- title: Running Hybrid VSS Queries with Redis and StartGpt
   path: examples/vector_databases/redis/redis-hybrid-query-examples.ipynb
   date: 2023-05-11
   authors:
@@ -825,7 +825,7 @@
   tags:
     - embeddings
 
-- title: Redis Vectors as JSON with OpenAI
+- title: Redis Vectors as JSON with StartGpt
   path: examples/vector_databases/redis/redisjson/redisjson.ipynb
   date: 2023-05-10
   authors:
@@ -833,7 +833,7 @@
   tags:
     - embeddings
 
-- title: Redis as a Context Store with OpenAI Chat
+- title: Redis as a Context Store with StartGpt Chat
   path: examples/vector_databases/redis/redisqna/redisqna.ipynb
   date: 2023-05-11
   authors:
@@ -842,16 +842,16 @@
     - completions
     - embeddings
 
-- title: Using Tair as a vector database for OpenAI embeddings
-  path: examples/vector_databases/tair/Getting_started_with_Tair_and_OpenAI.ipynb
+- title: Using Tair as a vector database for StartGpt embeddings
+  path: examples/vector_databases/tair/Getting_started_with_Tair_and_StartGpt.ipynb
   date: 2023-09-11
   authors:
     - dongqqcom
   tags:
     - embeddings
 
-- title: Question Answering with Langchain, Tair and OpenAI
-  path: examples/vector_databases/tair/QA_with_Langchain_Tair_and_OpenAI.ipynb
+- title: Question Answering with Langchain, Tair and StartGpt
+  path: examples/vector_databases/tair/QA_with_Langchain_Tair_and_StartGpt.ipynb
   date: 2023-09-11
   authors:
     - dongqqcom
@@ -877,7 +877,7 @@
   tags:
     - embeddings
 
-- title: Weaviate <> OpenAI
+- title: Weaviate <> StartGpt
   path: examples/vector_databases/weaviate/README.md
   date: 2023-02-13
   authors:
@@ -894,7 +894,7 @@
   tags:
     - embeddings
 
-- title: Using Weaviate with Generative OpenAI module for Generative Search
+- title: Using Weaviate with Generative StartGpt module for Generative Search
   path: >-
     examples/vector_databases/weaviate/generative-search-with-weaviate-and-openai.ipynb
   date: 2023-05-22
@@ -904,7 +904,7 @@
     - embeddings
     - completions
 
-- title: Using Weaviate with OpenAI vectorize module for Embeddings Search
+- title: Using Weaviate with StartGpt vectorize module for Embeddings Search
   path: >-
     examples/vector_databases/weaviate/getting-started-with-weaviate-and-openai.ipynb
   date: 2023-02-13
@@ -913,7 +913,7 @@
   tags:
     - embeddings
 
-- title: Using Weaviate with OpenAI vectorize module for Hybrid Search
+- title: Using Weaviate with StartGpt vectorize module for Hybrid Search
   path: >-
     examples/vector_databases/weaviate/hybrid-search-with-weaviate-and-openai.ipynb
   date: 2023-02-13
@@ -922,7 +922,7 @@
   tags:
     - embeddings
 
-- title: Question Answering in Weaviate with OpenAI Q&A module
+- title: Question Answering in Weaviate with StartGpt Q&A module
   path: >-
     examples/vector_databases/weaviate/question-answering-with-weaviate-and-openai.ipynb
   date: 2023-02-13
@@ -932,18 +932,18 @@
     - embeddings
     - completions
 
-- title: Filtered Search with Zilliz and OpenAI
+- title: Filtered Search with Zilliz and StartGpt
   path: >-
-    examples/vector_databases/zilliz/Filtered_search_with_Zilliz_and_OpenAI.ipynb
+    examples/vector_databases/zilliz/Filtered_search_with_Zilliz_and_StartGpt.ipynb
   date: 2023-03-28
   authors:
     - filip-halt
   tags:
     - embeddings
 
-- title: Getting Started with Zilliz and OpenAI
+- title: Getting Started with Zilliz and StartGpt
   path: >-
-    examples/vector_databases/zilliz/Getting_started_with_Zilliz_and_OpenAI.ipynb
+    examples/vector_databases/zilliz/Getting_started_with_Zilliz_and_StartGpt.ipynb
   date: 2023-03-28
   authors:
     - filip-halt
@@ -1027,7 +1027,7 @@
   tags:
     - embeddings
 
-- title: Question Answering with LangChain, Deep Lake, & OpenAI
+- title: Question Answering with LangChain, Deep Lake, & StartGpt
   path: examples/vector_databases/deeplake/deeplake_langchain_qa.ipynb
   date: 2023-09-30
   authors:
@@ -1044,7 +1044,7 @@
     - tiktoken
     - completions
 
-- title: OpenAI API Monitoring with Weights & Biases Weave
+- title: StartGpt API Monitoring with Weights & Biases Weave
   path: examples/third_party/Openai_monitoring_with_wandb_weave.ipynb
   date: 2023-10-04
   authors:
@@ -1144,7 +1144,7 @@
     - embeddings
     - completions
 
-- title: Semantic search using MongoDB Atlas Vector Search and OpenAI
+- title: Semantic search using MongoDB Atlas Vector Search and StartGpt
   path: examples/vector_databases/mongodb_atlas/semantic_search_using_mongodb_atlas_vector_search.ipynb
   date: 2023-11-21
   authors:

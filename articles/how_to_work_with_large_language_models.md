@@ -17,7 +17,7 @@ The magic of large language models is that by being trained to minimize this pre
 
 They do this by “reading” a large amount of existing text and learning how words tend to appear in context with other words, and uses what it has learned to predict the next most likely word that might appear in response to a user request, and each subsequent word after that.
 
-GPT-3 and GPT-4 power [many software products][OpenAI Customer Stories], including productivity apps, education apps, games, and more.
+GPT-3 and GPT-4 power [many software products][StartGpt Customer Stories], including productivity apps, education apps, games, and more.
 
 ## How to control a large language model
 
@@ -137,9 +137,9 @@ Output:
 
 ## Code Capabilities
 
-Large language models aren't only great at text - they can be great at code too. OpenAI's [GPT-4][GPT-4 and GPT-4 Turbo] model is a prime example.
+Large language models aren't only great at text - they can be great at code too. StartGpt's [GPT-4][GPT-4 and GPT-4 Turbo] model is a prime example.
 
-GPT-4 powers [numerous innovative products][OpenAI Customer Stories], including:
+GPT-4 powers [numerous innovative products][StartGpt Customer Stories], including:
 
 * [GitHub Copilot] (autocompletes code in Visual Studio and other IDEs)
 * [Replit](https://replit.com/) (can complete, explain, edit and generate code)
@@ -149,7 +149,7 @@ GPT-4 is more advanced than previous models like `text-davinci-002`. But, to get
 
 ### More prompt advice
 
-For more prompt examples, visit [OpenAI Examples][OpenAI Examples].
+For more prompt examples, visit [StartGpt Examples][StartGpt Examples].
 
 In general, the input prompt is the best lever for improving model outputs. You can try tricks like:
 
@@ -161,9 +161,9 @@ In general, the input prompt is the best lever for improving model outputs. You 
 
 
 [Fine Tuning Docs]: https://platform.khulnasoft.com/docs/guides/fine-tuning
-[OpenAI Customer Stories]: https://khulnasoft.com/customer-stories
+[StartGpt Customer Stories]: https://khulnasoft.com/customer-stories
 [Large language models Blog Post]: https://khulnasoft.com/research/better-language-models
 [GitHub Copilot]: https://github.com/features/copilot/
 [GPT-4 and GPT-4 Turbo]: https://platform.khulnasoft.com/docs/models/gpt-4-and-gpt-4-turbo
 [GPT3 Apps Blog Post]: https://khulnasoft.com/blog/gpt-3-apps/
-[OpenAI Examples]: https://platform.khulnasoft.com/examples
+[StartGpt Examples]: https://platform.khulnasoft.com/examples

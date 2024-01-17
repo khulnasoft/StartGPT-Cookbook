@@ -1,6 +1,6 @@
 # Semantic search using Supabase Vector
 
-The purpose of this guide is to demonstrate how to store OpenAI embeddings in [Supabase Vector](https://supabase.com/docs/guides/ai) (Postgres + pgvector) for the purposes of semantic search.
+The purpose of this guide is to demonstrate how to store StartGpt embeddings in [Supabase Vector](https://supabase.com/docs/guides/ai) (Postgres + pgvector) for the purposes of semantic search.
 
 [Supabase](https://supabase.com/docs) is an open-source Firebase alternative built on top of [Postgres](https://en.wikipedia.org/wiki/PostgreSQL), a production-grade SQL database. Since Supabase Vector is built on [pgvector](https://github.com/pgvector/pgvector), you can store your embeddings within the same database that holds the rest of your application data. When combined with pgvector's indexing algorithms, vector search remains [fast at large scales](https://supabase.com/blog/increase-performance-pgvector-hnsw).
 
@@ -10,7 +10,7 @@ This guide covers:
 
 1. [Setting up your database](#setup-database)
 2. [Creating a SQL table](#create-a-vector-table) that can store vector data
-3. [Generating OpenAI embeddings](#generate-openai-embeddings) using OpenAI's JavaScript client
+3. [Generating StartGpt embeddings](#generate-openai-embeddings) using StartGpt's JavaScript client
 4. [Storing the embeddings](#store-embeddings-in-database) in your SQL table using the Supabase JavaScript client
 5. [Performing semantic search](#semantic-search) over the embeddings using a Postgres function and the Supabase JavaScript client
 
@@ -41,7 +41,7 @@ create table documents (
 
 Since Supabase is built on Postgres, we're just using regular SQL here. You can modify this table however you like to better fit your application. If you have existing database tables, you can simply add a new `vector` column to the appropriate table.
 
-The important piece to understand is the `vector` data type, which is a new data type that became available when we enabled the pgvector extension earlier. The size of the vector (1536 here) represents the number of dimensions in the embedding. Since we're using OpenAI's `text-embedding-ada-002` model in this example, we set the vector size to 1536.
+The important piece to understand is the `vector` data type, which is a new data type that became available when we enabled the pgvector extension earlier. The size of the vector (1536 here) represents the number of dimensions in the embedding. Since we're using StartGpt's `text-embedding-ada-002` model in this example, we set the vector size to 1536.
 
 Let's go ahead and create a vector index on this table so that future queries remain performant as the table grows:
 
@@ -59,9 +59,9 @@ alter table documents enable row level security;
 
 This will prevent unauthorized access to this table through the auto-generated REST API (more on this shortly).
 
-## Generate OpenAI embeddings
+## Generate StartGpt embeddings
 
-This guide uses JavaScript to generate embeddings, but you can easily modify it to use any [language supported by OpenAI](https://platform.khulnasoft.com/docs/libraries).
+This guide uses JavaScript to generate embeddings, but you can easily modify it to use any [language supported by StartGpt](https://platform.khulnasoft.com/docs/libraries).
 
 If you are using JavaScript, feel free to use whichever server-side JavaScript runtime that you prefer (Node.js, Deno, Supabase Edge Functions).
 
@@ -74,21 +74,21 @@ npm install openai
 then import it:
 
 ```js
-import OpenAI from 'openai';
+import StartGpt from 'openai';
 ```
 
 If you're using Deno or Supabase Edge Functions, you can import `openai` directly from a URL:
 
 ```js
-import OpenAI from 'https://esm.sh/openai@4';
+import StartGpt from 'https://esm.sh/openai@4';
 ```
 
 > In this example we import from https://esm.sh which is a CDN that automatically fetches the respective NPM module for you and serves it over HTTP.
 
-Next we'll generate an OpenAI embedding using [`text-embedding-ada-002`](https://platform.khulnasoft.com/docs/guides/embeddings/embedding-models):
+Next we'll generate an StartGpt embedding using [`text-embedding-ada-002`](https://platform.khulnasoft.com/docs/guides/embeddings/embedding-models):
 
 ```js
-const openai = new OpenAI();
+const openai = new StartGpt();
 
 const input = 'The cat chases the mouse';
 
@@ -100,10 +100,10 @@ const result = await openai.embeddings.create({
 const [{ embedding }] = result.data;
 ```
 
-Remember that you will need an [OpenAI API key](https://platform.khulnasoft.com/api-keys) to interact with the OpenAI API. You can pass this as an environment variable called `STARTGPT_API_KEY`, or manually set it when you instantiate your OpenAI client:
+Remember that you will need an [StartGpt API key](https://platform.khulnasoft.com/api-keys) to interact with the StartGpt API. You can pass this as an environment variable called `STARTGPT_API_KEY`, or manually set it when you instantiate your StartGpt client:
 
 ```js
-const openai = new OpenAI({
+const openai = new StartGpt({
   apiKey: '<openai-api-key>',
 });
 ```
@@ -236,7 +236,7 @@ Inside the function we implement the query which does two things:
 - Filters the documents to only include those who's embeddings match within the above `match_threshold`. Since the `<#>` operator performs the negative inner product (versus positive inner product), we negate the similarity threshold before comparing. This means a `match_threshold` of 1 is most similar, and -1 is most dissimilar.
 - Orders the documents by negative inner product (`<#>`) ascending. This allows us to retrieve documents that match closest first.
 
-> Since OpenAI embeddings are normalized, we opted to use inner product (`<#>`) because it is slightly more performant than other operators like cosine distance (`<=>`). It is important to note though this only works because the embeddings are normalized - if they weren't, cosine distance should be used.
+> Since StartGpt embeddings are normalized, we opted to use inner product (`<#>`) because it is slightly more performant than other operators like cosine distance (`<=>`). It is important to note though this only works because the embeddings are normalized - if they weren't, cosine distance should be used.
 
 Now we can call this function from our application using the `supabase.rpc()` method:
 
@@ -271,6 +271,6 @@ At this point you have a list of documents that matched the query based on seman
 
 You can use this example as the foundation for other semantic search techniques, like retrieval augmented generation (RAG).
 
-For more information on OpenAI embeddings, read the [Embedding](https://platform.khulnasoft.com/docs/guides/embeddings) docs.
+For more information on StartGpt embeddings, read the [Embedding](https://platform.khulnasoft.com/docs/guides/embeddings) docs.
 
 For more information on Supabase Vector, read the [AI & Vector](https://supabase.com/docs/guides/ai) docs.

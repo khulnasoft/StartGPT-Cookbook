@@ -1,12 +1,12 @@
 """
 API REQUEST PARALLEL PROCESSOR
 
-Using the OpenAI API to process lots of text quickly takes some care.
+Using the StartGpt API to process lots of text quickly takes some care.
 If you trickle in a million API requests one by one, they'll take days to complete.
 If you flood a million API requests in parallel, they'll exceed the rate limits and fail with errors.
 To maximize throughput, parallel requests need to be throttled to stay under rate limits.
 
-This script parallelizes requests to the OpenAI API while throttling to stay under rate limits.
+This script parallelizes requests to the StartGpt API while throttling to stay under rate limits.
 
 Features:
 - Streams requests from file, to avoid running out of memory for giant jobs
@@ -308,7 +308,7 @@ class APIRequest:
         save_filepath: str,
         status_tracker: StatusTracker,
     ):
-        """Calls the OpenAI API and saves results."""
+        """Calls the StartGpt API and saves results."""
         logging.info(f"Starting request #{self.task_id}")
         error = None
         try:
@@ -370,7 +370,7 @@ def api_endpoint_from_url(request_url):
     """Extract the API endpoint from the request URL."""
     match = re.search("^https://[^/]+/v\\d+/(.+)$", request_url)
     if match is None:
-        # for Azure OpenAI deployment urls
+        # for Azure StartGpt deployment urls
         match = re.search(r"^https://[^/]+/openai/deployments/[^/]+/(.+?)(\?|$)", request_url)
     return match[1]
 

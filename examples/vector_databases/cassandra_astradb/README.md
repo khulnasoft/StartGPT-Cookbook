@@ -22,7 +22,7 @@ head over to [datastax.com](https://docs.datastax.com/en/astra/home/astra.html).
 
 ### Example notebooks
 
-The following examples show how easily OpenAI and DataStax Astra DB can
+The following examples show how easily StartGpt and DataStax Astra DB can
 work together to power vector-based AI applications. You can run them either
 with your local Jupyter engine or as Colab notebooks:
 

@@ -16,7 +16,7 @@ People are writing great tools and papers for improving outputs from GPT. Here a
 - [LiteLLM](https://github.com/BerriAI/litellm): A minimal Python library for calling LLM APIs with a consistent format.
 - [LlamaIndex](https://github.com/jerryjliu/llama_index): A Python library for augmenting LLM apps with data.
 - [LMQL](https://lmql.ai): A programming language for LLM interaction with support for typed prompting, control flow, constraints, and tools.
-- [OpenAI Evals](https://github.com/openai/evals): An open-source library for evaluating task performance of language models and prompts.
+- [StartGpt Evals](https://github.com/openai/evals): An open-source library for evaluating task performance of language models and prompts.
 - [Outlines](https://github.com/normal-computing/outlines): A Python library that provides a domain-specific language to simplify prompting and constrain generation.
 - [Parea AI](https://www.parea.ai): A platform for debugging, testing, and monitoring LLM apps.
 - [Portkey](https://portkey.ai/): A platform for observability, model management, evals, and security for LLM apps.
@@ -32,8 +32,8 @@ People are writing great tools and papers for improving outputs from GPT. Here a
 
 - [Brex's Prompt Engineering Guide](https://github.com/brexhq/prompt-engineering): Brex's introduction to language models and prompt engineering.
 - [learnprompting.org](https://learnprompting.org/): An introductory course to prompt engineering.
-- [Lil'Log Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/): An OpenAI researcher's review of the prompt engineering literature (as of March 2023).
-- [OpenAI Cookbook: Techniques to improve reliability](https://cookbook.khulnasoft.com/articles/techniques_to_improve_reliability): A slightly dated (Sep 2022) review of techniques for prompting language models.
+- [Lil'Log Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/): An StartGpt researcher's review of the prompt engineering literature (as of March 2023).
+- [StartGpt Cookbook: Techniques to improve reliability](https://cookbook.khulnasoft.com/articles/techniques_to_improve_reliability): A slightly dated (Sep 2022) review of techniques for prompting language models.
 - [promptingguide.ai](https://www.promptingguide.ai/): A prompt engineering guide that demonstrates many techniques.
 - [Xavi Amatriain's Prompt Engineering 101 Introduction to Prompt Engineering](https://amatriain.net/blog/PromptEngineering) and [202 Advanced Prompt Engineering](https://amatriain.net/blog/prompt201): A basic but opinionated introduction to prompt engineering and a follow up collection with many advanced methods starting with CoT.   
 

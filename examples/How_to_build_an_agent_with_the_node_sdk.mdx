@@ -1,8 +1,8 @@
 # How to build an agent with the Node.js SDK
 
-OpenAI functions enable your app to take action based on user inputs. This means that it can, e.g., search the web, send emails, or book tickets on behalf of your users, making it more powerful than a regular chatbot.
+StartGpt functions enable your app to take action based on user inputs. This means that it can, e.g., search the web, send emails, or book tickets on behalf of your users, making it more powerful than a regular chatbot.
 
-In this tutorial, you will build an app that uses OpenAI functions along with the latest version of the Node.js SDK. The app runs in the browser, so you only need a code editor and, e.g., VS Code Live Server to follow along locally. Alternatively, write your code directly in the browser via [this code playground at Scrimba.](https://scrimba.com/scrim/c6r3LkU9)
+In this tutorial, you will build an app that uses StartGpt functions along with the latest version of the Node.js SDK. The app runs in the browser, so you only need a code editor and, e.g., VS Code Live Server to follow along locally. Alternatively, write your code directly in the browser via [this code playground at Scrimba.](https://scrimba.com/scrim/c6r3LkU9)
 
 ## What you will build
 
@@ -12,21 +12,21 @@ which means it can figure out where you’re located and what the weather
 is at the moment.
 
 At this point, it's important to understand that
-OpenAI doesn't execute any code for you. It just tells your app which
+StartGpt doesn't execute any code for you. It just tells your app which
 functions it should use in a given scenario, and then leaves it up to
 your app to invoke them.
 
 Once our agent knows your location and the weather, it'll use GPT’s
 internal knowledge to suggest suitable local activities for you.
 
-## Importing the SDK and authenticating with OpenAI
+## Importing the SDK and authenticating with StartGpt
 
-We start by importing the OpenAI SDK at the top of our JavaScript file and authenticate with our API key, which we have stored as an environment variable.
+We start by importing the StartGpt SDK at the top of our JavaScript file and authenticate with our API key, which we have stored as an environment variable.
 
 ```js
-import OpenAI from "openai";
+import StartGpt from "openai";
 
-const openai = new OpenAI({
+const openai = new StartGpt({
   apiKey: process.env.STARTGPT_API_KEY,
   dangerouslyAllowBrowser: true,
 });
@@ -63,9 +63,9 @@ async function getCurrentWeather(latitude, longitude) {
 }
 ```
 
-## Describing our functions for OpenAI
+## Describing our functions for StartGpt
 
-For OpenAI to understand the purpose of these functions, we need to
+For StartGpt to understand the purpose of these functions, we need to
 describe them using a specific schema. We'll create an array called
 `tools` that contains one object per function. Each object
 will have two keys: `type`, `function`, and the `function` key has 
@@ -108,9 +108,9 @@ const tools = [
 
 ## Setting up the messages array
 
-We also need to define a `messages` array. This will keep track of all of the messages back and forth between our app and OpenAI.
+We also need to define a `messages` array. This will keep track of all of the messages back and forth between our app and StartGpt.
 
-The first object in the array should always have the `role` property set to `"system"`, which tells OpenAI that this is how we want it to behave.
+The first object in the array should always have the `role` property set to `"system"`, which tells StartGpt that this is how we want it to behave.
 
 ```js
 const messages = [
@@ -128,7 +128,7 @@ We are now ready to build the logic of our app, which lives in the
 `agent` function. It is asynchronous and takes one argument: the
 `userInput`.
 
-We start by pushing the `userInput` to the messages array. This time, we set the `role` to `"user"`, so that OpenAI knows that this is the input from the user.
+We start by pushing the `userInput` to the messages array. This time, we set the `role` to `"user"`, so that StartGpt knows that this is the input from the user.
 
 ```js
 async function agent(userInput) {
@@ -166,7 +166,7 @@ Let's try to run the `agent` with an input that requires a function call to give
 agent("Where am I located right now?");
 ```
 
-When we run the code above, we see the response from OpenAI logged out
+When we run the code above, we see the response from StartGpt logged out
 to the console like this:
 
 ```js
@@ -190,7 +190,7 @@ to the console like this:
             ]
         },
         logprobs: null,
-        finish_reason: "tool_calls" // OpenAI wants us to call a function
+        finish_reason: "tool_calls" // StartGpt wants us to call a function
     }],
     usage: {
         prompt_tokens: 134,
@@ -207,7 +207,7 @@ The name of the function can be found in the
 `response.choices[0].message.tool_calls[0].function.name` key, which is set to
 `"getLocation"`.
 
-## Turning the OpenAI response into a function call
+## Turning the StartGpt response into a function call
 
 Now that we have the name of the function as a string, we'll need to
 translate that into a function call. To help us with that, we'll gather
@@ -221,7 +221,7 @@ const availableTools = {
 ```
 
 This is handy because we'll be able to access the `getLocation` function
-via bracket notation and the string we got back from OpenAI, like this:
+via bracket notation and the string we got back from StartGpt, like this:
 `availableTools["getLocation"]`.
 
 ```js
@@ -237,7 +237,7 @@ if (finish_reason === "tool_calls" && message.tool_calls) {
 }
 ```
 
-We're also grabbing ahold of any arguments OpenAI wants us to pass into
+We're also grabbing ahold of any arguments StartGpt wants us to pass into
 the function: `message.tool_calls[0].function.arguments`.
 However, we won't need any arguments for this first function call.
 
@@ -264,11 +264,11 @@ messages.push({
 });
 ```
 
-Notice that the `role` is set to `"function"`. This tells OpenAI
+Notice that the `role` is set to `"function"`. This tells StartGpt
 that the `content` parameter contains the result of the function call
 and not the input from the user.
 
-At this point, we need to send a new request to OpenAI with this updated
+At this point, we need to send a new request to StartGpt with this updated
 `messages` array. However, we don’t want to hard code a new function
 call, as our agent might need to go back and forth between itself and
 GPT several times until it has found the final answer for the user.
@@ -367,7 +367,7 @@ arguments. This is data it got back from the first function call we did.
 {"role":"assistant","content":null,"tool_calls":[{"id":"call_uc1oozJfGTvYEfIzzcsfXfOl","type":"function","function":{"name":"getCurrentWeather","arguments":"{\n\"latitude\": \"10.859\",\n\"longitude\": \"59.955\"\n}"}}]}
 ```
 
-You've now built an AI agent using OpenAI functions and the Node.js SDK! If you're looking for an extra challenge, consider enhancing this app. For example, you could add a function that fetches up-to-date information on events and activities in the user's location.
+You've now built an AI agent using StartGpt functions and the Node.js SDK! If you're looking for an extra challenge, consider enhancing this app. For example, you could add a function that fetches up-to-date information on events and activities in the user's location.
 
 Happy coding!
 
@@ -375,9 +375,9 @@ Happy coding!
 <summary>Complete code</summary>
 
 ```js
-import OpenAI from "openai";
+import StartGpt from "openai";
 
-const openai = new OpenAI({
+const openai = new StartGpt({
   apiKey: process.env.STARTGPT_API_KEY,
   dangerouslyAllowBrowser: true,
 });

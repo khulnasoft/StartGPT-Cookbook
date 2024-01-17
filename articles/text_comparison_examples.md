@@ -1,12 +1,12 @@
 # Text comparison examples
 
-The [OpenAI API embeddings endpoint](https://beta.khulnasoft.com/docs/guides/embeddings) can be used to measure relatedness or similarity between pieces of text.
+The [StartGpt API embeddings endpoint](https://beta.khulnasoft.com/docs/guides/embeddings) can be used to measure relatedness or similarity between pieces of text.
 
 By leveraging GPT-3's understanding of text, these embeddings [achieved state-of-the-art results](https://arxiv.org/abs/2201.10005) on benchmarks in unsupervised learning and transfer learning settings.
 
 Embeddings can be used for semantic search, recommendations, cluster analysis, near-duplicate detection, and more.
 
-For more information, read OpenAI's blog post announcements:
+For more information, read StartGpt's blog post announcements:
 
 * [Introducing Text and Code Embeddings (Jan 2022)](https://khulnasoft.com/blog/introducing-text-and-code-embeddings/)
 * [New and Improved Embedding Model (Dec 2022)](https://khulnasoft.com/blog/new-and-improved-embedding-model/)
@@ -46,6 +46,6 @@ Similar to search, these cosine similarity scores can either be used on their ow
 
 ## Customizing Embeddings
 
-Although OpenAI's embedding model weights cannot be fine-tuned, you can nevertheless use training data to customize embeddings to your application.
+Although StartGpt's embedding model weights cannot be fine-tuned, you can nevertheless use training data to customize embeddings to your application.
 
 In [Customizing_embeddings.ipynb](../examples/Customizing_embeddings.ipynb), we provide an example method for customizing your embeddings using training data. The idea of the method is to train a custom matrix to multiply embedding vectors by in order to get new customized embeddings. With good training data, this custom matrix will help emphasize the features relevant to your training labels. You can equivalently consider the matrix multiplication as (a) a modification of the embeddings or (b) a modification of the distance function used to measure the distances between embeddings.

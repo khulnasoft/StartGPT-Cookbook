@@ -7,15 +7,15 @@ For technical details, refer to the [Elasticsearch documentation](https://www.el
 
 The [`elasticsearch-labs`](https://github.com/elastic/elasticsearch-labs) repo contains executable Python notebooks, sample apps, and resources for testing out the Elastic platform.
 
-## OpenAI cookbook notebooks 📒
+## StartGpt cookbook notebooks 📒
 
-Check out our notebooks in this repo for working with OpenAI, using Elasticsearch as your vector database.
+Check out our notebooks in this repo for working with StartGpt, using Elasticsearch as your vector database.
 
 ### [Semantic search](https://github.com/khulnasoft/startgpt-cookbook/blob/main/examples/vector_databases/elasticsearch/elasticsearch-semantic-search.ipynb)
 
 In this notebook you'll learn how to:
 
- - Index the OpenAI Wikipedia embeddings dataset into Elasticsearch
+ - Index the StartGpt Wikipedia embeddings dataset into Elasticsearch
  - Encode a question with the `openai ada-02` model
  - Perform a semantic search
 
@@ -27,5 +27,5 @@ In this notebook you'll learn how to:
 This notebooks builds on the semantic search notebook by:
 
 - Selecting the top hit from a semantic search
-- Sending that result to the OpenAI [Chat Completions](https://platform.khulnasoft.com/docs/guides/gpt/chat-completions-api) API endpoint for retrieval augmented generation (RAG)
+- Sending that result to the StartGpt [Chat Completions](https://platform.khulnasoft.com/docs/guides/gpt/chat-completions-api) API endpoint for retrieval augmented generation (RAG)
 

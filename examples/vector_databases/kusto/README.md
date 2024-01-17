@@ -25,10 +25,10 @@ If you’d like to try this demo, please follow the instructions in the [Noteboo
 
 It will allow you to -  
 
-1. Use precomputed embeddings created by OpenAI API. 
+1. Use precomputed embeddings created by StartGpt API. 
 
 2. Store the embeddings in Kusto. 
 
-3. Convert raw text query to an embedding with OpenAI API. 
+3. Convert raw text query to an embedding with StartGpt API. 
 
 4. Use Kusto to perform cosine similarity search in the stored embeddings.

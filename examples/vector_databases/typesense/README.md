@@ -27,5 +27,5 @@ Besides vector storage and search, Typesense also offers the following features:
 
 ## How To
 
-- To learn more about how to use Typesense with OpenAI embeddings, see the notebook here for an example: [examples/vector_databases/Using_vector_databases_for_embeddings_search.ipynb](/examples/vector_databases/Using_vector_databases_for_embeddings_search.ipynb)
+- To learn more about how to use Typesense with StartGpt embeddings, see the notebook here for an example: [examples/vector_databases/Using_vector_databases_for_embeddings_search.ipynb](/examples/vector_databases/Using_vector_databases_for_embeddings_search.ipynb)
 - To learn more about Typesense's vector search feature, read the docs here: [https://typesense.org/docs/0.24.1/api/vector-search.html](https://typesense.org/docs/0.24.1/api/vector-search.html).

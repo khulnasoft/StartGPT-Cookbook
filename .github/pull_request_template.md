@@ -14,8 +14,8 @@ When contributing new content, read through our [contribution guidelines](https:
 
 - [ ] I have added a new entry in [registry.yaml](https://github.com/khulnasoft/startgpt-cookbook/blob/main/registry.yaml) (and, optionally, in [authors.yaml](https://github.com/khulnasoft/startgpt-cookbook/blob/main/authors.yaml)) so that my content renders on the cookbook website.
 - [ ] I have conducted a self-review of my content based on the [contribution guidelines](https://github.com/khulnasoft/startgpt-cookbook/blob/main/CONTRIBUTING.md#rubric):
-  - [ ] Relevance: This content is related to building with OpenAI technologies and is useful to others.
-  - [ ] Uniqueness: I have searched for related examples in the OpenAI Cookbook, and verified that my content offers new insights or unique information compared to existing documentation.
+  - [ ] Relevance: This content is related to building with StartGpt technologies and is useful to others.
+  - [ ] Uniqueness: I have searched for related examples in the StartGpt Cookbook, and verified that my content offers new insights or unique information compared to existing documentation.
   - [ ] Spelling and Grammar: I have checked for spelling or grammatical mistakes.
   - [ ] Clarity: I have done a final read-through and verified that my submission is well-organized and easy to understand.
   - [ ] Correctness: The information I include is correct and all of my code executes successfully.
