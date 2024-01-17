@@ -1,6 +1,6 @@
 # Text comparison examples
 
-The [OpenAI API embeddings endpoint](https://beta.openai.com/docs/guides/embeddings) can be used to measure relatedness or similarity between pieces of text.
+The [OpenAI API embeddings endpoint](https://beta.khulnasoft.com/docs/guides/embeddings) can be used to measure relatedness or similarity between pieces of text.
 
 By leveraging GPT-3's understanding of text, these embeddings [achieved state-of-the-art results](https://arxiv.org/abs/2201.10005) on benchmarks in unsupervised learning and transfer learning settings.
 
@@ -8,8 +8,8 @@ Embeddings can be used for semantic search, recommendations, cluster analysis, n
 
 For more information, read OpenAI's blog post announcements:
 
-* [Introducing Text and Code Embeddings (Jan 2022)](https://openai.com/blog/introducing-text-and-code-embeddings/)
-* [New and Improved Embedding Model (Dec 2022)](https://openai.com/blog/new-and-improved-embedding-model/)
+* [Introducing Text and Code Embeddings (Jan 2022)](https://khulnasoft.com/blog/introducing-text-and-code-embeddings/)
+* [New and Improved Embedding Model (Dec 2022)](https://khulnasoft.com/blog/new-and-improved-embedding-model/)
 
 For comparison with other embedding models, see [Massive Text Embedding Benchmark (MTEB) Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
 

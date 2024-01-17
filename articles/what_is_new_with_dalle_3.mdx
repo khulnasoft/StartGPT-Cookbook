@@ -1,8 +1,8 @@
 # What’s new with DALL·E-3?
 
-DALL·E-3 is the latest version of our DALL-E text-to-image generation models. As the current state of the art in text-to-image generation, DALL·E is capable of generating high-quality images across a wide variety of domains. If you're interested in more technical details of how DALL·E-3 was built, you can read more about in our [research paper](https://cdn.openai.com/papers/dall-e-3.pdf). I'll be going over some of the new features and capabilities of DALL·E-3 in this article, as well as some examples of what new products you can build with the API.
+DALL·E-3 is the latest version of our DALL-E text-to-image generation models. As the current state of the art in text-to-image generation, DALL·E is capable of generating high-quality images across a wide variety of domains. If you're interested in more technical details of how DALL·E-3 was built, you can read more about in our [research paper](https://cdn.khulnasoft.com/papers/dall-e-3.pdf). I'll be going over some of the new features and capabilities of DALL·E-3 in this article, as well as some examples of what new products you can build with the API.
 
-As a reminder, the Image generation API hasn't changed and maintains the same endpoints and formatting as with DALL·E-2. If you're looking for a guide on how to use the Image API, see [the Cookbook article](https://cookbook.openai.com/examples/dalle/image_generations_edits_and_variations_with_dall-e) on the subject.
+As a reminder, the Image generation API hasn't changed and maintains the same endpoints and formatting as with DALL·E-2. If you're looking for a guide on how to use the Image API, see [the Cookbook article](https://cookbook.khulnasoft.com/examples/dalle/image_generations_edits_and_variations_with_dall-e) on the subject.
 
 The only API endpoint available for use with DALL·E-3 right now is **Generations** (/v1/images/generations). We don’t support variations or inpainting yet, though the Edits and Variations endpoints are available for use with DALL·E-2.
 
@@ -30,7 +30,7 @@ Our launch of DALL·E-3 comes with lots of new features and capabilities to help
 
 ### Prompt Rewriting
 
-A new feature in the latest DALL·E-3 API is prompt rewriting, where we use GPT-4 to optimize all of your prompts before they’re passed to DALL-E. In our research, we’ve seen that using very detailed prompts give significantly better results. You can read more about our captioning, prompting, and safety mitigations in the [DALL·E-3 research paper](https://cdn.openai.com/papers/dall-e-3.pdf).
+A new feature in the latest DALL·E-3 API is prompt rewriting, where we use GPT-4 to optimize all of your prompts before they’re passed to DALL-E. In our research, we’ve seen that using very detailed prompts give significantly better results. You can read more about our captioning, prompting, and safety mitigations in the [DALL·E-3 research paper](https://cdn.khulnasoft.com/papers/dall-e-3.pdf).
 
 _Keep in mind that this feature isn’t able to be disabled at the moment, though you can achieve a high level of fidelity by simply giving instructions to the relabeler in your prompt, as I'll show below with examples._
 
@@ -196,7 +196,7 @@ Using DALL·E to generate custom fonts or iterate on letter designs could be rea
 
 Thanks for reading! If you're looking for more resources on DALL·E-3, here are some related links:
 
-- [DALL·E-3 Blog Post](https://openai.com/dall-e-3)
-- [DALL·E-3 Research Paper](https://cdn.openai.com/papers/dall-e-3.pdf)
-- [Image API Documentation](https://platform.openai.com/docs/api-reference/images)
-- [Image API Cookbook](https://cookbook.openai.com/examples/dalle/image_generations_edits_and_variations_with_dall-e)
+- [DALL·E-3 Blog Post](https://khulnasoft.com/dall-e-3)
+- [DALL·E-3 Research Paper](https://cdn.khulnasoft.com/papers/dall-e-3.pdf)
+- [Image API Documentation](https://platform.khulnasoft.com/docs/api-reference/images)
+- [Image API Cookbook](https://cookbook.khulnasoft.com/examples/dalle/image_generations_edits_and_variations_with_dall-e)

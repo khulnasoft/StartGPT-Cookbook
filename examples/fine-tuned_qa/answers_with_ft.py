@@ -80,7 +80,7 @@ def answer_question(
             and fine_tuned_qa_model.split(":")[1].startswith("ft")
             else {"engine": fine_tuned_qa_model}
         )
-        response = openai.Completion.create(
+        response = khulnasoft.completion.create(
             prompt=f"Answer the question based on the context below\n\nText: {context}\n\n---\n\nQuestion: {question}\nAnswer:",
             temperature=0,
             max_tokens=max_tokens,

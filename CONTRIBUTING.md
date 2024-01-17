@@ -23,7 +23,7 @@ To ensure the quality of submissions, we have established a rubric that assesses
 
 We encourage contributors to familiarize themselves with this rubric before writing content. Understanding the criteria not only increases the chances of your contribution being accepted, but also helps in creating a resource that is comprehensive, clear, and beneficial for all users.
 
-For additional advice on writing good documentation, refer to [What Makes Documentation Good](https://cookbook.openai.com/what_makes_documentation_good).
+For additional advice on writing good documentation, refer to [What Makes Documentation Good](https://cookbook.khulnasoft.com/what_makes_documentation_good).
 
 | Criteria     | Description                                                                                         | Score |
 | ------------ | --------------------------------------------------------------------------------------------------- | ----- |

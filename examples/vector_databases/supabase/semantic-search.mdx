@@ -61,7 +61,7 @@ This will prevent unauthorized access to this table through the auto-generated R
 
 ## Generate OpenAI embeddings
 
-This guide uses JavaScript to generate embeddings, but you can easily modify it to use any [language supported by OpenAI](https://platform.openai.com/docs/libraries).
+This guide uses JavaScript to generate embeddings, but you can easily modify it to use any [language supported by OpenAI](https://platform.khulnasoft.com/docs/libraries).
 
 If you are using JavaScript, feel free to use whichever server-side JavaScript runtime that you prefer (Node.js, Deno, Supabase Edge Functions).
 
@@ -85,7 +85,7 @@ import OpenAI from 'https://esm.sh/openai@4';
 
 > In this example we import from https://esm.sh which is a CDN that automatically fetches the respective NPM module for you and serves it over HTTP.
 
-Next we'll generate an OpenAI embedding using [`text-embedding-ada-002`](https://platform.openai.com/docs/guides/embeddings/embedding-models):
+Next we'll generate an OpenAI embedding using [`text-embedding-ada-002`](https://platform.khulnasoft.com/docs/guides/embeddings/embedding-models):
 
 ```js
 const openai = new OpenAI();
@@ -100,7 +100,7 @@ const result = await openai.embeddings.create({
 const [{ embedding }] = result.data;
 ```
 
-Remember that you will need an [OpenAI API key](https://platform.openai.com/api-keys) to interact with the OpenAI API. You can pass this as an environment variable called `OPENAI_API_KEY`, or manually set it when you instantiate your OpenAI client:
+Remember that you will need an [OpenAI API key](https://platform.khulnasoft.com/api-keys) to interact with the OpenAI API. You can pass this as an environment variable called `OPENAI_API_KEY`, or manually set it when you instantiate your OpenAI client:
 
 ```js
 const openai = new OpenAI({
@@ -271,6 +271,6 @@ At this point you have a list of documents that matched the query based on seman
 
 You can use this example as the foundation for other semantic search techniques, like retrieval augmented generation (RAG).
 
-For more information on OpenAI embeddings, read the [Embedding](https://platform.openai.com/docs/guides/embeddings) docs.
+For more information on OpenAI embeddings, read the [Embedding](https://platform.khulnasoft.com/docs/guides/embeddings) docs.
 
 For more information on Supabase Vector, read the [AI & Vector](https://supabase.com/docs/guides/ai) docs.

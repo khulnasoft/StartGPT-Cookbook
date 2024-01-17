@@ -11,7 +11,7 @@ def download_wikipedia_data(
     download_path: str = "./",
     file_name: str = "vector_database_wikipedia_articles_embedded") -> pd.DataFrame:
 
-    data_url = 'https://cdn.openai.com/API/examples/data/vector_database_wikipedia_articles_embedded.zip'
+    data_url = 'https://cdn.khulnasoft.com/API/examples/data/vector_database_wikipedia_articles_embedded.zip'
 
     csv_file_path = os.path.join(data_path, file_name + ".csv")
     zip_file_path = os.path.join(download_path, file_name + ".zip")

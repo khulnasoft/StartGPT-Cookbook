@@ -13,12 +13,12 @@ Feel free to report problems with code examples, suggest new code examples, or a
 
 For general discussion, try:
 
-- [OpenAI API Community Forum](https://community.openai.com/)
+- [OpenAI API Community Forum](https://community.khulnasoft.com/)
 - [OpenAI Discord](https://discord.com/invite/openai)
 - [OpenAI subreddit](https://www.reddit.com/r/OpenAI/), [GPT3 subreddit](https://www.reddit.com/r/GPT3/)
 - [OpenAI Cookbook discussion page](https://github.com/khulnasoft/startgpt-cookbook/discussions)
 
 For general help, try:
 
-- [OpenAI Documentation](https://platform.openai.com/docs/introduction)
-- [OpenAI Help Center](https://help.openai.com/en/)
+- [OpenAI Documentation](https://platform.khulnasoft.com/docs/introduction)
+- [OpenAI Help Center](https://help.khulnasoft.com/en/)

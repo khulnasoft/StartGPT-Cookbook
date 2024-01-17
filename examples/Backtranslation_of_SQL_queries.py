@@ -24,7 +24,7 @@ def get_candidates(
     :param n: The number of completions to generate.
     :return: A list of completions.
     """
-    response = openai.Completion.create(
+    response = khulnasoft.completion.create(
         engine=engine,
         prompt=prompt,
         temperature=temperature,
@@ -72,7 +72,7 @@ def eval_candidate(
     :param engine: The engine to use for the evaluation.
     :return: The evaluation of the candidate answer.
     """
-    response = openai.Completion.create(
+    response = khulnasoft.completion.create(
         engine=engine,
         prompt=eval_template.format(candidate_answer, original_instruction),
         temperature=0,

@@ -36,7 +36,7 @@ An example of each is shown below.
 
 ### Instruction prompts
 
-Write your instruction at the top of the prompt (or at the bottom, or both), and the model will do its best to follow the instruction and then stop. Instructions can be detailed, so don't be afraid to write a paragraph explicitly detailing the output you want, just stay aware of how many [tokens](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) the model can process.
+Write your instruction at the top of the prompt (or at the bottom, or both), and the model will do its best to follow the instruction and then stop. Instructions can be detailed, so don't be afraid to write a paragraph explicitly detailing the output you want, just stay aware of how many [tokens](https://help.khulnasoft.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) the model can process.
 
 Example instruction prompt:
 
@@ -160,10 +160,10 @@ In general, the input prompt is the best lever for improving model outputs. You 
 
 
 
-[Fine Tuning Docs]: https://platform.openai.com/docs/guides/fine-tuning
-[OpenAI Customer Stories]: https://openai.com/customer-stories
-[Large language models Blog Post]: https://openai.com/research/better-language-models
+[Fine Tuning Docs]: https://platform.khulnasoft.com/docs/guides/fine-tuning
+[OpenAI Customer Stories]: https://khulnasoft.com/customer-stories
+[Large language models Blog Post]: https://khulnasoft.com/research/better-language-models
 [GitHub Copilot]: https://github.com/features/copilot/
-[GPT-4 and GPT-4 Turbo]: https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
-[GPT3 Apps Blog Post]: https://openai.com/blog/gpt-3-apps/
-[OpenAI Examples]: https://platform.openai.com/examples
+[GPT-4 and GPT-4 Turbo]: https://platform.khulnasoft.com/docs/models/gpt-4-and-gpt-4-turbo
+[GPT3 Apps Blog Post]: https://khulnasoft.com/blog/gpt-3-apps/
+[OpenAI Examples]: https://platform.khulnasoft.com/examples
