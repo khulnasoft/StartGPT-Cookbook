@@ -27,8 +27,8 @@
   path: examples/Chat_finetuning_data_prep.ipynb
   date: 2023-08-22
   authors:
-    - mwu1993
-    - simonpfish
+    - nxpkg
+    - gitworkflows
   tags:
     - completions
     - tiktoken
@@ -177,7 +177,7 @@
   path: examples/How_to_finetune_chat_models.ipynb
   date: 2023-08-22
   authors:
-    - simonpfish
+    - gitworkflows
   tags:
     - completions
 
@@ -230,7 +230,7 @@
   path: examples/Question_answering_using_a_search_API.ipynb
   date: 2023-06-16
   authors:
-    - simonpfish
+    - gitworkflows
     - ted-at-openai
   tags:
     - embeddings
@@ -469,7 +469,7 @@
   date: 2023-08-16
   authors:
     - shyamal-anadkat
-    - simonpfish
+    - gitworkflows
   tags:
     - embeddings
     - completions
@@ -987,7 +987,7 @@
   date: 2023-01-20
   authors:
     - ted-at-openai
-    - simonpfish
+    - gitworkflows
   tags:
     - completions
     - embeddings
@@ -1085,7 +1085,7 @@
   date: 2023-10-15
   authors:
     - shyamal-anadkat
-    - simonpfish
+    - gitworkflows
   tags:
     - completions
     - functions
