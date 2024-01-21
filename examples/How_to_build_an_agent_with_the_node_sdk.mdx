@@ -24,9 +24,9 @@ internal knowledge to suggest suitable local activities for you.
 We start by importing the StartGpt SDK at the top of our JavaScript file and authenticate with our API key, which we have stored as an environment variable.
 
 ```js
-import StartGpt from "openai";
+import StartGpt from "startgpt";
 
-const openai = new StartGpt({
+const startgpt = new StartGpt({
   apiKey: process.env.STARTGPT_API_KEY,
   dangerouslyAllowBrowser: true,
 });
@@ -136,7 +136,7 @@ async function agent(userInput) {
     role: "user",
     content: userInput,
   });
-  const response = await openai.chat.completions.create({
+  const response = await startgpt.chat.completions.create({
     model: "gpt-4",
     messages: messages,
     tools: tools,
@@ -291,7 +291,7 @@ answer, so we'll return the function and cancel the loop.
 
 ```js
 for (let i = 0; i < 5; i++) {
-  const response = await openai.chat.completions.create({
+  const response = await startgpt.chat.completions.create({
     model: "gpt-4",
     messages: messages,
     tools: tools,
@@ -375,9 +375,9 @@ Happy coding!
 <summary>Complete code</summary>
 
 ```js
-import StartGpt from "openai";
+import StartGpt from "startgpt";
 
-const openai = new StartGpt({
+const startgpt = new StartGpt({
   apiKey: process.env.STARTGPT_API_KEY,
   dangerouslyAllowBrowser: true,
 });
@@ -447,7 +447,7 @@ async function agent(userInput) {
   });
 
   for (let i = 0; i < 5; i++) {
-    const response = await openai.chat.completions.create({
+    const response = await startgpt.chat.completions.create({
       model: "gpt-4",
       messages: messages,
       tools: tools,

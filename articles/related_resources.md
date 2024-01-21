@@ -16,7 +16,7 @@ People are writing great tools and papers for improving outputs from GPT. Here a
 - [LiteLLM](https://github.com/BerriAI/litellm): A minimal Python library for calling LLM APIs with a consistent format.
 - [LlamaIndex](https://github.com/jerryjliu/llama_index): A Python library for augmenting LLM apps with data.
 - [LMQL](https://lmql.ai): A programming language for LLM interaction with support for typed prompting, control flow, constraints, and tools.
-- [StartGpt Evals](https://github.com/openai/evals): An open-source library for evaluating task performance of language models and prompts.
+- [StartGpt Evals](https://github.com/khulnasoft/evals): An open-source library for evaluating task performance of language models and prompts.
 - [Outlines](https://github.com/normal-computing/outlines): A Python library that provides a domain-specific language to simplify prompting and constrain generation.
 - [Parea AI](https://www.parea.ai): A platform for debugging, testing, and monitoring LLM apps.
 - [Portkey](https://portkey.ai/): A platform for observability, model management, evals, and security for LLM apps.
@@ -42,7 +42,7 @@ People are writing great tools and papers for improving outputs from GPT. Here a
 - [Andrew Ng's DeepLearning.AI](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/): A short course on prompt engineering for developers.
 - [Andrej Karpathy's Let's build GPT](https://www.youtube.com/watch?v=kCc8FmEb1nY): A detailed dive into the machine learning underlying GPT.
 - [Prompt Engineering by DAIR.AI](https://www.youtube.com/watch?v=dOxUroR57xs): A one-hour video on various prompt engineering techniques.
-- [Scrimba course about Assistants API](https://scrimba.com/learn/openaiassistants): A 30-minute interactive course about the Assistants API.
+- [Scrimba course about Assistants API](https://scrimba.com/learn/startgptassistants): A 30-minute interactive course about the Assistants API.
 - [LinkedIn course: Introduction to Prompt Engineering: How to talk to the AIs](https://www.linkedin.com/learning/prompt-engineering-how-to-talk-to-the-ais/talking-to-the-ais?u=0): Short video introduction to prompt engineering
 
 

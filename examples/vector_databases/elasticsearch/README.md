@@ -16,7 +16,7 @@ Check out our notebooks in this repo for working with StartGpt, using Elasticsea
 In this notebook you'll learn how to:
 
  - Index the StartGpt Wikipedia embeddings dataset into Elasticsearch
- - Encode a question with the `openai ada-02` model
+ - Encode a question with the `startgpt ada-02` model
  - Perform a semantic search
 
 <hr>

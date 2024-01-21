@@ -10,7 +10,7 @@ This guide covers:
 
 1. [Setting up your database](#setup-database)
 2. [Creating a SQL table](#create-a-vector-table) that can store vector data
-3. [Generating StartGpt embeddings](#generate-openai-embeddings) using StartGpt's JavaScript client
+3. [Generating StartGpt embeddings](#generate-startgpt-embeddings) using StartGpt's JavaScript client
 4. [Storing the embeddings](#store-embeddings-in-database) in your SQL table using the Supabase JavaScript client
 5. [Performing semantic search](#semantic-search) over the embeddings using a Postgres function and the Supabase JavaScript client
 
@@ -65,22 +65,22 @@ This guide uses JavaScript to generate embeddings, but you can easily modify it 
 
 If you are using JavaScript, feel free to use whichever server-side JavaScript runtime that you prefer (Node.js, Deno, Supabase Edge Functions).
 
-If you're using Node.js, first install `openai` as a dependency:
+If you're using Node.js, first install `startgpt` as a dependency:
 
 ```shell
-npm install openai
+npm install startgpt
 ```
 
 then import it:
 
 ```js
-import StartGpt from 'openai';
+import StartGpt from 'startgpt';
 ```
 
-If you're using Deno or Supabase Edge Functions, you can import `openai` directly from a URL:
+If you're using Deno or Supabase Edge Functions, you can import `startgpt` directly from a URL:
 
 ```js
-import StartGpt from 'https://esm.sh/openai@4';
+import StartGpt from 'https://esm.sh/startgpt@4';
 ```
 
 > In this example we import from https://esm.sh which is a CDN that automatically fetches the respective NPM module for you and serves it over HTTP.
@@ -88,11 +88,11 @@ import StartGpt from 'https://esm.sh/openai@4';
 Next we'll generate an StartGpt embedding using [`text-embedding-ada-002`](https://platform.khulnasoft.com/docs/guides/embeddings/embedding-models):
 
 ```js
-const openai = new StartGpt();
+const startgpt = new StartGpt();
 
 const input = 'The cat chases the mouse';
 
-const result = await openai.embeddings.create({
+const result = await startgpt.embeddings.create({
   input,
   model: 'text-embedding-ada-002',
 });
@@ -103,8 +103,8 @@ const [{ embedding }] = result.data;
 Remember that you will need an [StartGpt API key](https://platform.khulnasoft.com/api-keys) to interact with the StartGpt API. You can pass this as an environment variable called `STARTGPT_API_KEY`, or manually set it when you instantiate your StartGpt client:
 
 ```js
-const openai = new StartGpt({
-  apiKey: '<openai-api-key>',
+const startgpt = new StartGpt({
+  apiKey: '<startgpt-api-key>',
 });
 ```
 
@@ -244,7 +244,7 @@ Now we can call this function from our application using the `supabase.rpc()` me
 const query = 'What does the cat chase?';
 
 // First create an embedding on the query itself
-const result = await openai.embeddings.create({
+const result = await startgpt.embeddings.create({
   input: query,
   model: 'text-embedding-ada-002',
 });

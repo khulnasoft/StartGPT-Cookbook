@@ -9,7 +9,7 @@ from sklearn.manifold import TSNE
 from sklearn.metrics import average_precision_score, precision_recall_curve
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 
-import openai
+import startgpt
 import numpy as np
 import pandas as pd
 
@@ -20,7 +20,7 @@ def get_embedding(text: str, model="text-similarity-davinci-001", **kwargs) -> L
     # replace newlines, which can negatively affect performance.
     text = text.replace("\n", " ")
 
-    response = openai.embeddings.create(input=[text], model=model, **kwargs)
+    response = startgpt.embeddings.create(input=[text], model=model, **kwargs)
 
     return response.data[0].embedding
 
@@ -33,7 +33,7 @@ async def aget_embedding(
     # replace newlines, which can negatively affect performance.
     text = text.replace("\n", " ")
 
-    return (await openai.embeddings.create(input=[text], model=model, **kwargs))["data"][0][
+    return (await startgpt.embeddings.create(input=[text], model=model, **kwargs))["data"][0][
         "embedding"
     ]
 
@@ -47,7 +47,7 @@ def get_embeddings(
     # replace newlines, which can negatively affect performance.
     list_of_text = [text.replace("\n", " ") for text in list_of_text]
 
-    data = openai.embeddings.create(input=list_of_text, model=model, **kwargs).data
+    data = startgpt.embeddings.create(input=list_of_text, model=model, **kwargs).data
     return [d.embedding for d in data]
 
 
@@ -60,7 +60,7 @@ async def aget_embeddings(
     # replace newlines, which can negatively affect performance.
     list_of_text = [text.replace("\n", " ") for text in list_of_text]
 
-    data = (await openai.embeddings.create(input=list_of_text, model=model, **kwargs)).data
+    data = (await startgpt.embeddings.create(input=list_of_text, model=model, **kwargs)).data
     return [d.embedding for d in data]
 
 

@@ -2,7 +2,7 @@ from typing import List, Union
 
 from smokey import Smokey
 
-import openai
+import startgpt
 
 
 def get_candidates(

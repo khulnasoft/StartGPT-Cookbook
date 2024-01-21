@@ -57,7 +57,7 @@ Inputs:
     - leave headroom by setting this to 50% or 75% of your limit
     - if omitted, will default to 125,000
 - token_encoding_name : str, optional
-    - name of the token encoding used, as defined in the `tiktoken` package
+    - name of the token encoding used, as defined in the `keepsakes` package
     - if omitted, will default to "cl100k_base" (used by `text-embedding-ada-002`)
 - max_attempts : int, optional
     - number of times to retry a failed request before giving up
@@ -99,7 +99,7 @@ import json  # for saving results to a jsonl file
 import logging  # for logging rate limit warnings and other messages
 import os  # for reading API key
 import re  # for matching endpoint from request URL
-import tiktoken  # for counting tokens
+import keepsakes  # for counting tokens
 import time  # for sleeping after rate limit is hit
 from dataclasses import (
     dataclass,
@@ -371,7 +371,7 @@ def api_endpoint_from_url(request_url):
     match = re.search("^https://[^/]+/v\\d+/(.+)$", request_url)
     if match is None:
         # for Azure StartGpt deployment urls
-        match = re.search(r"^https://[^/]+/openai/deployments/[^/]+/(.+?)(\?|$)", request_url)
+        match = re.search(r"^https://[^/]+/startgpt/deployments/[^/]+/(.+?)(\?|$)", request_url)
     return match[1]
 
 
@@ -388,7 +388,7 @@ def num_tokens_consumed_from_request(
     token_encoding_name: str,
 ):
     """Count the number of tokens in the request. Only supports completion and embedding requests."""
-    encoding = tiktoken.get_encoding(token_encoding_name)
+    encoding = keepsakes.get_encoding(token_encoding_name)
     # if completions request, tokens = prompt + n * max_tokens
     if api_endpoint.endswith("completions"):
         max_tokens = request_json.get("max_tokens", 15)

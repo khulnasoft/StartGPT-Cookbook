@@ -6,7 +6,7 @@ Some of the code below may rely on [deprecated API endpoints](https://github.com
 
 import argparse
 
-import openai
+import startgpt
 
 
 def create_context(
@@ -21,7 +21,7 @@ def create_context(
     :param max_rerank: The maximum number of reranking
     :return: The context
     """
-    results = openai.Engine(search_model).search(
+    results = startgpt.Engine(search_model).search(
         search_model=search_model,
         query=question,
         max_rerank=max_rerank,

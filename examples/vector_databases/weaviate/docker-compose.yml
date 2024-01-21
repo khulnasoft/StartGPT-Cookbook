@@ -25,9 +25,9 @@ services:
       QUERY_DEFAULTS_LIMIT: 25
       AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: 'true'
       PERSISTENCE_DATA_PATH: '/var/lib/weaviate'
-      DEFAULT_VECTORIZER_MODULE: 'text2vec-openai'
-      ENABLE_MODULES: 'text2vec-openai,qna-openai'
-      CLUSTER_HOSTNAME: 'openai-weaviate-cluster'
+      DEFAULT_VECTORIZER_MODULE: 'text2vec-startgpt'
+      ENABLE_MODULES: 'text2vec-startgpt,qna-startgpt'
+      CLUSTER_HOSTNAME: 'startgpt-weaviate-cluster'
       # The following parameter (`STARTGPT_APIKEY`) is optional, as you can also provide it at insert/query time
       # STARTGPT_APIKEY: sk-foobar 
 ...

@@ -21,7 +21,7 @@ Kusto also supports in-built function [series_cosine_similarity_fl](https://lear
 
 ![semantic_search_flow](./images/semantic_search_user_flow.png)
 
-If you’d like to try this demo, please follow the instructions in the [Notebook](Getting_started_with_kusto_and_openai_embeddings.ipynb).
+If you’d like to try this demo, please follow the instructions in the [Notebook](Getting_started_with_kusto_and_startgpt_embeddings.ipynb).
 
 It will allow you to -  
 

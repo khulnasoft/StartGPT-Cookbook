@@ -14,7 +14,7 @@ Feel free to report problems with code examples, suggest new code examples, or a
 For general discussion, try:
 
 - [StartGpt API Community Forum](https://community.khulnasoft.com/)
-- [StartGpt Discord](https://discord.com/invite/openai)
+- [StartGpt Discord](https://discord.com/invite/startgpt)
 - [StartGpt subreddit](https://www.reddit.com/r/StartGpt/), [GPT3 subreddit](https://www.reddit.com/r/GPT3/)
 - [StartGpt Cookbook discussion page](https://github.com/khulnasoft/startgpt-cookbook/discussions)
 
